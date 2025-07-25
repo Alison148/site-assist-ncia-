@@ -3,32 +3,110 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>HelpTech Antunes - Início</title>
+
+  <!-- Font Awesome e Bootstrap -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" />
   <link rel="stylesheet" href="style.css" />
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
-<title>HelpTech Antunes - Início</title></head>
+  <style>
+    .whatsapp-float {
+      position: fixed;
+      bottom: 20px;
+      right: 20px;
+      z-index: 999;
+    }
+
+    .hero-title {
+      font-size: 3rem;
+      font-weight: bold;
+    }
+
+    .hero-subtitle {
+      font-size: 1.25rem;
+    }
+
+    footer a {
+      text-decoration: none;
+    }
+
+    footer .fab {
+      transition: transform 0.2s;
+    }
+
+    footer .fab:hover {
+      transform: scale(1.2);
+    }
+  </style>
+</head>
 <body>
-  <nav>
-    <ul>
-      <li><a href="index.html">Início</a></li>
-      <li><a href="sobre.html">Sobre</a></li>
-      <li><a href="servicos.html">Serviços</a></li>
-      <li><a href="contato.html">Contato</a></li>
-    </ul>
+
+  <!-- NAVBAR -->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark px-4">
+    <a class="navbar-brand" href="#">
+      <i class="fas fa-cogs me-2"></i> HelpTech Antunes
+    </a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav ms-auto">
+        <li class="nav-item"><a class="nav-link active" href="index.html">Início</a></li>
+        <li class="nav-item"><a class="nav-link" href="sobre.html">Sobre</a></li>
+        <li class="nav-item"><a class="nav-link" href="servicos.html">Serviços</a></li>
+        <li class="nav-item"><a class="nav-link" href="contato.html">Contato</a></li>
+      </ul>
+    </div>
   </nav>
 
-  <header>
-    <h1>HelpTech Antunes</h1>
-    <p>Assistência Técnica de Confiança em Jundiaí/SP</p>
+  <!-- HEADER DESTAQUE -->
+  <header class="bg-light text-center py-5">
+    <div class="container">
+      <h1 class="text-success hero-title"><i class="fas fa-wrench me-2"></i>HelpTech Antunes</h1>
+      <p class="hero-subtitle">Assistência Técnica de Confiança em Jundiaí/SP</p>
+      <p class="text-muted mt-3">Fundada e gerenciada por <strong>Alison Antunes Miranda</strong>, com mais de 2 anos de experiência no setor técnico e de impressão.</p>
+      <a href="servicos.html" class="btn btn-success btn-lg mt-3">
+        <i class="fas fa-arrow-right me-2"></i> Conheça nossos serviços
+      </a>
+    </div>
   </header>
-  <section>
-    <h2>Bem-vindo!</h2>
-    <p>Oferecemos serviços de manutenção técnica, impressões, encadernações, informática e muito mais.</p>
-  </section>
-  <footer><p>&copy; 2025 HelpTech Antunes</p></footer>
-  
-<a class="whatsapp-float" href="https://wa.me/5511957805217" target="_blank" title="Fale conosco no WhatsApp">
-  <img src="https://cdn-icons-png.flaticon.com/512/733/733585.png" alt="WhatsApp" />
-</a>
 
+  <!-- CONTEÚDO PRINCIPAL -->
+  <main class="container py-5">
+    <div class="row justify-content-center">
+      <div class="col-md-10 text-center">
+        <h2 class="text-primary mb-4"><i class="fas fa-handshake me-2"></i>Bem-vindo à HelpTech Antunes!</h2>
+        <p class="fs-5">
+          Oferecemos soluções completas em manutenção técnica, informática, impressão, encadernação, criação de sites, consultoria e muito mais. 
+          Com compromisso, agilidade e preço justo, somos referência em Jundiaí e região.
+        </p>
+      </div>
+    </div>
+  </main>
+
+  <!-- RODAPÉ -->
+  <footer class="bg-dark text-light text-center py-4">
+    <div class="container">
+      <p class="mb-1">&copy; 2025 <strong>HelpTech Antunes</strong></p>
+      <p class="mb-1"> Atendimento: Seg a Sex, das 9hrs às 18hrs</p>
+      <p class="mb-2">Desenvolvido por <strong>Alison Antunes Miranda</strong></p>
+      <div class="d-flex justify-content-center gap-3">
+      
+        </a>
+      
+        </a>
+     
+        </a>
+      </div>
+    </div>
+  </footer>
+
+  <!-- BOTÃO FLUTUANTE WHATSAPP -->
+  <a class="whatsapp-float" href="https://wa.me/5511957805217" target="_blank" title="Fale conosco no WhatsApp">
+    <img src="https://cdn-icons-png.flaticon.com/512/733/733585.png" alt="WhatsApp" width="60" />
+  </a>
+
+  <!-- Script Bootstrap -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>

@@ -2,60 +2,155 @@
 <html lang="pt-BR">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="style.css" />
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
-<title>Contato - HelpTech Antunes</title></head>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Contato - HelpTech Antunes</title>
+
+  <!-- Bootstrap + Font Awesome -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+  <style>
+    body {
+      background-color: #f8f9fa;
+    }
+
+    .hero-contato {
+      background: linear-gradient(135deg, #198754, #157347);
+      color: white;
+      padding: 60px 20px;
+      text-align: center;
+    }
+
+    .hero-contato h1 {
+      font-size: 3rem;
+      font-weight: bold;
+    }
+
+    .form-container {
+      background-color: white;
+      padding: 30px;
+      border-radius: 12px;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    }
+
+    .info-box {
+      background-color: #fff;
+      padding: 30px;
+      border-radius: 12px;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+    }
+
+    .whatsapp-float {
+      position: fixed;
+      bottom: 20px;
+      right: 20px;
+      z-index: 999;
+    }
+  </style>
+</head>
 <body>
-  <nav>
-    <ul>
-      <li><a href="index.html">Início</a></li>
-      <li><a href="sobre.html">Sobre</a></li>
-      <li><a href="servicos.html">Serviços</a></li>
-      <li><a href="contato.html">Contato</a></li>
-    </ul>
+
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark px-4">
+    <a class="navbar-brand" href="index.html">
+      <i class="fas fa-cogs me-2"></i> HelpTech Antunes
+    </a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav ms-auto">
+        <li class="nav-item"><a class="nav-link" href="index.html">Início</a></li>
+        <li class="nav-item"><a class="nav-link" href="sobre.html">Sobre</a></li>
+        <li class="nav-item"><a class="nav-link" href="servicos.html">Serviços</a></li>
+        <li class="nav-item"><a class="nav-link active" href="contato.html">Contato</a></li>
+      </ul>
+    </div>
   </nav>
 
-  <header>
-    <img src="https://via.placeholder.com/150x60.png?text=HelpTech+Logo" alt="Logo da HelpTech Antunes">
-    <h1>Fale Conosco</h1>
-  </header>
-
-  <section>
-    <p><i class="fas fa-map-marker-alt"></i> Avenida Luís Pereira dos Santos, 556 - Jundiaí/SP</p>
-    <p><i class="fab fa-whatsapp"></i> <a href="https://wa.me/5511957805217?text=Olá!%20Gostaria%20de%20um%20orçamento%20com%20a%20HelpTech%20Antunes.">+55 11 95780-5217</a></p>
-    <p><i class="fas fa-envelope"></i> contato@helptechantunes.com.br</p>
+  <!-- Hero -->
+  <section class="hero-contato">
+    <div class="container">
+      <h1><i class="fas fa-envelope me-2"></i> Fale Conosco</h1>
+      <p class="lead mt-3">Tire suas dúvidas, solicite orçamento ou suporte técnico com nossa equipe.</p>
+    </div>
   </section>
 
-  <section>
-    <h2>Solicitar Orçamento</h2>
-    <form action="https://formspree.io/f/xzbllkvd" method="POST">
-      <input type="text" name="nome" placeholder="Seu nome" required><br><br>
-      <input type="email" name="email" placeholder="Seu e-mail" required><br><br>
-      <input type="tel" name="telefone" placeholder="Seu telefone"><br><br>
-      <textarea name="mensagem" rows="5" placeholder="Descreva o problema ou serviço desejado" required></textarea><br><br>
-      <button type="submit">Enviar Orçamento</button>
-    </form>
-  </section>
+  <!-- Conteúdo Principal -->
+  <main class="container py-5">
+    <div class="row g-4">
 
-  <section>
-    <h2>Nos Encontre no Mapa</h2>
-    <iframe src="https://www.google.com/maps?q=Avenida+Lu%C3%ADs+Pereira+dos+Santos,+556,+Jundia%C3%AD+-+SP&output=embed" width="100%" height="300" style="border:0;" allowfullscreen loading="lazy"></iframe>
-  </section>
+      <!-- Informações -->
+      <div class="col-lg-5">
+        <div class="info-box">
+          <h4 class="text-success mb-3"><i class="fas fa-phone-alt me-2"></i>Contato Rápido</h4>
+          <p><i class="fas fa-map-marker-alt me-2 text-danger"></i> Avenida Luís Pereira dos Santos, 556 - Jundiaí/SP</p>
+          <p><i class="fab fa-whatsapp me-2 text-success"></i>
+            <a href="https://wa.me/5511957805217?text=Olá!%20Gostaria%20de%20um%20orçamento." target="_blank" class="text-decoration-none">+55 11 95780-5217</a>
+          </p>
+ 
+          </p>
 
-  <footer>
-    <p>&copy; 2025 HelpTech Antunes | CNPJ: 00.000.000/0001-00</p>
-    <p>Horário de atendimento: Seg a Sex - 9h às 18h</p>
-    <p>
-      <a href="https://wa.me/5511957805217"><i class="fab fa-whatsapp"></i></a>
-      <a href="https://instagram.com/helptechantunes" target="_blank"><i class="fab fa-instagram"></i></a>
-      <a href="https://facebook.com/helptechantunes" target="_blank"><i class="fab fa-facebook"></i></a>
-    </p>
+          <hr class="my-4">
+
+          <h5 class="text-success mb-3"><i class="fas fa-map me-2"></i>Como Chegar</h5>
+          <div class="ratio ratio-16x9 rounded-3 shadow-sm">
+            <iframe
+              src="https://www.google.com/maps?q=Avenida+Lu%C3%ADs+Pereira+dos+Santos,+556,+Jundia%C3%AD+-+SP&output=embed"
+              allowfullscreen loading="lazy"></iframe>
+          </div>
+        </div>
+      </div>
+
+      <!-- Formulário -->
+      <div class="col-lg-7">
+        <div class="form-container">
+          <h4 class="text-success mb-4"><i class="fas fa-file-signature me-2"></i>Solicite um Orçamento</h4>
+          <form action="https://formspree.io/f/xzbllkvd" method="POST">
+
+            <div class="mb-3">
+              <label class="form-label">Nome:</label>
+              <input type="text" name="nome" class="form-control" placeholder="Seu nome" required />
+            </div>
+
+            <div class="mb-3">
+              <label class="form-label">E-mail:</label>
+              <input type="email" name="email" class="form-control" placeholder="Seu e-mail" required />
+            </div>
+
+            <div class="mb-3">
+              <label class="form-label">Telefone:</label>
+              <input type="tel" name="telefone" class="form-control" placeholder="(DDD) 90000-0000" />
+            </div>
+
+            <div class="mb-4">
+              <label class="form-label">Mensagem:</label>
+              <textarea name="mensagem" class="form-control" rows="5" placeholder="Descreva o serviço desejado" required></textarea>
+            </div>
+
+            <button type="submit" class="btn btn-success w-100 py-2">
+              <i class="fas fa-paper-plane me-2"></i>Enviar Mensagem
+            </button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <!-- Rodapé -->
+  <footer class="bg-dark text-light text-center py-4 mt-5">
+    <p class="mb-1">&copy; 2025 HelpTech Antunes | Todos os direitos reservados</p>
+    <p class="mb-2">Atendimento: Segunda a Sexta, das 9h às 18h</p>
+    <div>
+
+    </div>
   </footer>
-  
-<a class="whatsapp-float" href="https://wa.me/5511957805217" target="_blank" title="Fale conosco no WhatsApp">
-  <img src="https://cdn-icons-png.flaticon.com/512/733/733585.png" alt="WhatsApp" />
-</a>
 
+  <!-- Botão flutuante WhatsApp -->
+  <a class="whatsapp-float" href="https://wa.me/5511957805217" target="_blank" title="Fale conosco pelo WhatsApp">
+    <img src="https://cdn-icons-png.flaticon.com/512/733/733585.png" alt="WhatsApp" width="60" />
+  </a>
+
+  <!-- Bootstrap Script -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
