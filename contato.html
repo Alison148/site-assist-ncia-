@@ -25,18 +25,11 @@
       font-weight: bold;
     }
 
-    .form-container {
+    .form-container, .info-box {
       background-color: white;
       padding: 30px;
       border-radius: 12px;
       box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
-    }
-
-    .info-box {
-      background-color: #fff;
-      padding: 30px;
-      border-radius: 12px;
-      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
     }
 
     .whatsapp-float {
@@ -45,13 +38,24 @@
       right: 20px;
       z-index: 999;
     }
+
+    .social-icons a {
+      color: #198754;
+      margin-right: 15px;
+      font-size: 1.5rem;
+      transition: color 0.3s;
+    }
+
+    .social-icons a:hover {
+      color: #145c39;
+    }
   </style>
 </head>
 <body>
 
   <!-- Navbar -->
   <nav class="navbar navbar-expand-lg navbar-dark bg-dark px-4">
-    <a class="navbar-brand" href="index.html">
+    <a class="navbar-brand fw-bold" href="index.html">
       <i class="fas fa-cogs me-2"></i> HelpTech Antunes
     </a>
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
@@ -87,8 +91,18 @@
           <p><i class="fab fa-whatsapp me-2 text-success"></i>
             <a href="https://wa.me/5511957805217?text=Olá!%20Gostaria%20de%20um%20orçamento." target="_blank" class="text-decoration-none">+55 11 95780-5217</a>
           </p>
- 
+          <p><i class="fas fa-envelope me-2 text-primary"></i>
+            <a href="mailto:antuneshelptech6@gmail.com" class="text-decoration-none">antuneshelptech6@gmail.com</a>
           </p>
+
+          <div class="social-icons mt-4">
+            <a href="https://instagram.com/helptech_antunes" target="_blank" title="Instagram">
+              <i class="fab fa-instagram"></i>
+            </a>
+            <a href="https://wa.me/5511957805217" target="_blank" title="WhatsApp">
+              <i class="fab fa-whatsapp"></i>
+            </a>
+          </div>
 
           <hr class="my-4">
 
@@ -109,7 +123,7 @@
 
             <div class="mb-3">
               <label class="form-label">Nome:</label>
-              <input type="text" name="nome" class="form-control" placeholder="Seu nome" required />
+              <input type="text" name="nome" class="form-control" placeholder="Seu nome completo" required />
             </div>
 
             <div class="mb-3">
@@ -139,10 +153,7 @@
   <!-- Rodapé -->
   <footer class="bg-dark text-light text-center py-4 mt-5">
     <p class="mb-1">&copy; 2025 HelpTech Antunes | Todos os direitos reservados</p>
-    <p class="mb-2">Atendimento: Segunda a Sexta, das 9h às 18h</p>
-    <div>
-
-    </div>
+    <p class="mb-0">Atendimento: Segunda a Sexta, das 9h às 18h</p>
   </footer>
 
   <!-- Botão flutuante WhatsApp -->

@@ -31,11 +31,18 @@
     }
 
     footer .fab {
-      transition: transform 0.2s;
+      transition: transform 0.3s ease;
+      font-size: 1.5rem;
     }
 
     footer .fab:hover {
       transform: scale(1.2);
+      color: #0dcaf0;
+    }
+
+    .social-icons a {
+      color: #fff;
+      margin: 0 10px;
     }
   </style>
 </head>
@@ -43,7 +50,7 @@
 
   <!-- NAVBAR -->
   <nav class="navbar navbar-expand-lg navbar-dark bg-dark px-4">
-    <a class="navbar-brand" href="#">
+    <a class="navbar-brand fw-bold" href="#">
       <i class="fas fa-cogs me-2"></i> HelpTech Antunes
     </a>
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
@@ -65,7 +72,7 @@
       <h1 class="text-success hero-title"><i class="fas fa-wrench me-2"></i>HelpTech Antunes</h1>
       <p class="hero-subtitle">Assistência Técnica de Confiança em Jundiaí/SP</p>
       <p class="text-muted mt-3">Fundada e gerenciada por <strong>Alison Antunes Miranda</strong>, com mais de 2 anos de experiência no setor técnico e de impressão.</p>
-      <a href="servicos.html" class="btn btn-success btn-lg mt-3">
+      <a href="servicos.html" class="btn btn-success btn-lg mt-3 shadow-sm">
         <i class="fas fa-arrow-right me-2"></i> Conheça nossos serviços
       </a>
     </div>
@@ -87,22 +94,20 @@
   <!-- RODAPÉ -->
   <footer class="bg-dark text-light text-center py-4">
     <div class="container">
-      <p class="mb-1">&copy; 2025 <strong>HelpTech Antunes</strong></p>
-      <p class="mb-1"> Atendimento: Seg a Sex, das 9hrs às 18hrs</p>
+      <p class="mb-1">&copy; 2025 <strong>HelpTech Antunes</strong> | Todos os direitos reservados</p>
+      <p class="mb-1">Atendimento: Segunda a Sexta, das 9h às 18h</p>
+      <p class="mb-1">E-mail: <a href="mailto:antuneshelptech6@gmail.com" class="text-info">antuneshelptech6@gmail.com</a></p>
       <p class="mb-2">Desenvolvido por <strong>Alison Antunes Miranda</strong></p>
-      <div class="d-flex justify-content-center gap-3">
       
-        </a>
-      
-        </a>
-     
-        </a>
+      <div class="social-icons">
+        <a href="https://instagram.com/helptech_antunes" target="_blank" title="Instagram"><i class="fab fa-instagram"></i></a>
+        <a href="https://wa.me/5511957805217" target="_blank" title="WhatsApp"><i class="fab fa-whatsapp"></i></a>
       </div>
     </div>
   </footer>
 
   <!-- BOTÃO FLUTUANTE WHATSAPP -->
-  <a class="whatsapp-float" href="https://wa.me/5511957805217" target="_blank" title="Fale conosco no WhatsApp">
+  <a class="whatsapp-float" href="https://wa.me/5511957805217" target="_blank" title="Fale conosco pelo WhatsApp">
     <img src="https://cdn-icons-png.flaticon.com/512/733/733585.png" alt="WhatsApp" width="60" />
   </a>
 
